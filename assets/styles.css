@@ -1,0 +1,5 @@
+/* Active link styles */
+nav a.active {
+    color: #ff6600; /* Change the color to your desired active link color */
+    font-weight: bold;
+}
