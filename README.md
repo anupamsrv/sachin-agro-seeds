@@ -1,4 +1,4 @@
-📌 # Sachin Agro Seeds - Website
+# 📌Sachin Agro Seeds - Website
 
 🌱 About the Project
 Sachin Agro Seeds is a modern, responsive website built using HTML, CSS, and JavaScript to showcase agricultural products. This project is designed to provide a seamless user experience, mobile-friendly design, and easy navigation.
