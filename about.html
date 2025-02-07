@@ -25,18 +25,165 @@
 </head>
 <body>
 
-    <!-- Header will be loaded here -->
+    <!-- Header Section -->
     <div id="header-container"></div>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Welcome to Sachin Agro Seeds</h2>
-        <p>We provide high-quality seeds for farmers.</p>
-    </main>
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>About Sachin Agro Seeds</h1>
+            <p>Committed to providing the best quality seeds for sustainable farming.</p>
+        </div>
+    </section>
 
-    <!-- Footer will be loaded here -->
+    <!-- About Us Content -->
+    <section class="about-section">
+        <div class="about-container container">
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>Sachin Agro Seeds has been a pioneer in the agriculture industry, delivering high-quality seeds to farmers nationwide. Our mission is to empower farmers with superior seed varieties that increase productivity and sustainability.</p>
+                <h3>Our Mission</h3>
+                <p>To revolutionize agriculture by providing high-quality seeds that ensure better yield and sustainability.</p>
+                <h3>Our Vision</h3>
+                <p>To be a trusted name in agriculture, making farming more profitable and sustainable.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/footer-logo.webp" alt="About Sachin Agro Seeds">
+            </div>
+        </div>
+    </section>
+    <section class="about-company">
+        <div class="container">
+            <h2>About Sachin Agro Seeds</h2>
+            <p>Providing high-quality seeds to farmers for over a decade, ensuring sustainable and high-yield agriculture.</p>
+    
+            <!-- Company Mission & Values -->
+            <div class="company-info">
+                <div class="company-text">
+                    <h3>Our Mission</h3>
+                    <p>To empower farmers with premium-quality seeds that maximize crop productivity and sustainability.</p>
+    
+                    <h3>Our Vision</h3>
+                    <p>To be a leader in agricultural innovation, helping farmers achieve greater success.</p>
+    
+                    <h3>Our Core Values</h3>
+                    <ul>
+                        <li>🌱 Quality & Innovation</li>
+                        <li>🌍 Sustainability & Eco-friendly Practices</li>
+                        <li>🤝 Trust & Farmer Satisfaction</li>
+                    </ul>
+                </div>
+                <div class="company-image">
+                    <img src="/assets/images/footer-logo.webp" alt="Sachin Agro Seeds History">
+                </div>
+            </div>
+    
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3>Our Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <img src="/assets/images/footer-logo.webp" alt="ISO Certification">
+                        <p>ISO Certified</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="/assets/images/footer-logo.webp" alt="FSSAI Approved">
+                        <p>FSSAI Approved</p>
+                    </div>
+                    <div class="cert-item">
+                        <img src="/assets/images/footer-logo.webp" alt="Government Approved">
+                        <p>Govt. Approved</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Team & Farmer Testimonials -->
+            <div class="team-testimonials">
+                <h3>Meet Our Team & Farmers</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="/assets/images/footer-logo.webp" alt="Founder">
+                        <h4>Sachin Kumar</h4>
+                        <p>Founder & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/assets/images/footer-logo.webp" alt="Marketing Manager">
+                        <h4>Anupam Kumar</h4>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <h3>What Farmers Say</h3>
+                    <div class="testimonial">
+                        <p>"Using Sachin Agro Seeds has increased my farm's yield by 30%! The best quality seeds I have ever used."</p>
+                        <h4>- Rajesh Kumar, Bihar</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose Sachin Agro Seeds?</h2>
+            <p>We are committed to delivering high-quality, research-backed seeds to empower farmers and dealers across India.</p>
+    
+            <div class="choose-grid">
+                <!-- Certifications -->
+                <div class="choose-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Quality</h3>
+                    <p>We are accredited with <strong>FSSAI, NSOP, and ISO</strong> certifications, ensuring top-notch seed quality and safety.</p>
+                </div>
+    
+                <!-- Research-Backed Seeds -->
+                <div class="choose-item">
+                    <i class="fas fa-flask"></i>
+                    <h3>Research-Backed Seeds</h3>
+                    <p>Our seeds are developed in collaboration with leading <strong>agricultural institutes</strong> for maximum yield and disease resistance.</p>
+                </div>
+    
+                <!-- Farmer Success Stories -->
+                <div class="choose-item">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Farmer Success Stories</h3>
+                    <p>See how our seeds have helped farmers achieve record harvests! <a href="testimonials.html">Watch testimonials</a>.</p>
+                </div>
+    
+                <!-- Dealer Benefits -->
+                <div class="choose-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Exclusive Dealer Benefits</h3>
+                    <ul>
+                        <li>📌 Competitive pricing tiers.</li>
+                        <li>📌 Nationwide logistics support.</li>
+                        <li>📌 Free marketing materials (posters, brochures).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Want to Know More?</h2>
+        <p>Get in touch with us for any inquiries regarding our products and services.</p>
+        <a href="/contact.html" class="btn secondary">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
     <div id="footer-container"></div>
 
-    <script src="/assets/main.js"></script>
+    <script>
+        // Load Header & Footer Dynamically
+        fetch("assets/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-container").innerHTML = data);
+
+        fetch("assets/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+
 </body>
 </html>
