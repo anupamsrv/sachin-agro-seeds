@@ -30,12 +30,147 @@
         <div id="header-container"></div>
     </header>
     <main>
-        
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="https://img.freepik.com/premium-photo/closeup-fresh-cauliflower-vegetable-field-concept-organic-farming-healthy-eating-agriculture-fresh-produce_981050-22333.jpg?w=1060"
+                        alt="Slide 1">
+                    <div class="overlay">
+                        <h1>Sachin Agro Seeds</h1>
+                        <p>Quality Seeds for a Better Future</p>
+                        <div class="hero-buttons">
+                            <a href="products.html" class="btn primary">Explore Products</a>
+                            <a href="contact.html" class="btn secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMqO0l6W5u0jA7zcLmFXSYBhsQ1N7ncHLxw&s"
+                        alt="Slide 2">
+                    <div class="overlay">
+                        <h1>Fresh and Organic</h1>
+                        <p>Bringing the Best Agricultural Products</p>
+                        <div class="hero-buttons">
+                            <a href="products.html" class="btn primary">Explore Products</a>
+                            <a href="contact.html" class="btn secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="https://img.freepik.com/premium-photo/organic-cauliflower-farm-with-white-heads-peeking-through-protective-leaves_41097-15078.jpg"
+                        alt="Slide 3">
+                    <div class="overlay">
+                        <h1>Grow with Confidence</h1>
+                        <p>Premium Seeds for High Yield</p>
+                        <div class="hero-buttons">
+                            <a href="products.html" class="btn primary">Explore Products</a>
+                            <a href="contact.html" class="btn secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+
+                <!-- Dots/Indicators -->
+                <div class="dots-container"></div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Sachin Agro Seeds</h2>
+                    <p>We are dedicated to providing high-quality seeds for farmers. Our goal is to enhance agricultural
+                        productivity through innovation and sustainability.</p>
+                    <a href="/about.html" class="btn primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/footer-logo.webp" alt="About Us">
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <h2>Our Best-Selling Seeds</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="assets/images/footer-logo.webp" alt="Wheat Seeds">
+                    <h3>Cauliflower Seeds</h3>
+                    <p>High-yield cauliflower seeds for best productivity.</p>
+                    <a href="products.html" class="btn primary">View More</a>
+                </div>
+                <div class="product">
+                    <img src="assets/images/footer-logo.webp" alt="Rice Seeds">
+                    <h3>Hibrid Seeds</h3>
+                    <p>Premium quality hibrid cauliflower seeds for all climates.</p>
+                    <a href="products.html" class="btn primary">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose">
+            <h2>Why Choose Us?</h2>
+            <div class="choose-grid">
+                <div class="choose-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>High-Quality Seeds</h3>
+                    <p>Our seeds are rigorously tested to ensure high yield and disease resistance.</p>
+                </div>
+                <div class="choose-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Trusted by Farmers</h3>
+                    <p>We have built a strong reputation by consistently delivering quality.</p>
+                </div>
+                <div class="choose-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Sustainable Farming</h3>
+                    <p>We promote eco-friendly agricultural practices for a greener future.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Team -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://sachinportfolio.in/images/aboutpic.jpg" alt="Founder">
+                    <h3>Sachin Kumar</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://anupamportfolio.in/images/user.jpg" alt="Manager">
+                    <h3>Anupam Kumar</h3>
+                    <p>Marketing Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgohMvIlpB2vqm_vbifmzYIW2vnoXPj2sRAg&s"
+                        alt="Head Agronomist">
+                    <h3>Ravi Verma</h3>
+                    <p>Head Agronomist</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Reach out to us!</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10 Digits Phone No" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn secondary">Send Message</button>
+            </form>
+            <a href="https://wa.me/9931873012" class="btn secondary" target="_blank">Chat on WhatsApp</a>
+        </section>
     </main>
     <footer>
         <div id="footer-container"></div>
     </footer>
-    <script src="/assets/main.js"></script>
+    <script defer src="/assets/main.js"></script>
 </body>
 
 </html>
